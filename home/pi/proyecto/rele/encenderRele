@@ -1,0 +1,16 @@
+#!/bin/bash
+
+DHT11=`/home/pi/proyecto/rele/dht_proyecto`
+TEMMAX=35
+
+#echo $DHT11
+gpio -g mode 7 out
+
+if [ $DHT11 -gt $TEMMAX ]
+then
+    echo Encendido 
+    gpio -g write 7 1
+else
+    echo Apagado
+    gpio -g write 7 0
+fi

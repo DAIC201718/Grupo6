@@ -1,0 +1,16 @@
+#!/bin/bash
+
+LDR=`/home/pi/practica3/scriptldr.sh`
+LUZ=1700
+
+gpio -g mode 22 out
+#echo $LDR
+
+if [ $LDR -gt $LUZ ]
+then
+    #echo Encendido
+    gpio -g write 22 1
+else
+    #echo Apagado
+    gpio -g write 22 0
+fi
