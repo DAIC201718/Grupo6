@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LDR=`/home/pi/practica3/scriptldr.sh`
+LDR=`/home/pi/proyecto/practica3/scriptldr.sh`
 LUZ=1700
 
 gpio -g mode 22 out

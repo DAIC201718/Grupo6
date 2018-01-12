@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TEMP=`/home/pi/proyecto/rele/dht_proyecto`
-LDR=`/home/pi/practica3/scriptldr.sh`
+LDR=`/home/pi/proyecto/practica3/scriptldr.sh`
 SONIDO=`/home/pi/proyecto/sonido/sonidoOK.py`
 HUMEDADAIRE=`/home/pi/proyecto/rele/dht_humedad`
 PLACE=clase112
